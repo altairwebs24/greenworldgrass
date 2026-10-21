@@ -1,0 +1,3 @@
+- [x] Install the Cloudflare Vite plugin and define an explicit deployment plugins array without duplicating adapters.
+- [x] Check public image storage and unauthenticated image access.
+- [ ] Verify configuration resolution and website rendering.

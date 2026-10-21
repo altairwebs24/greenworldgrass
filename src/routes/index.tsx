@@ -6,6 +6,8 @@ import { WhatsAppCTA } from "@/components/PageHero";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Greenworld Grass — Instant Lawn Installation in Gauteng" },
       { name: "description", content: "Fresh instant grass direct from our farm, artificial lawns, soils and landscaping across Gauteng at affordable prices." },
       { property: "og:title", content: "Greenworld Grass — Instant Lawns, Gauteng" },

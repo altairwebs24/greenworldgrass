@@ -5,6 +5,8 @@ import { PageHero, WhatsAppCTA } from "@/components/PageHero";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Lawn & Landscaping Services — Greenworld Grass" },
       { name: "description", content: "Artificial lawns, block & turf, garden design, irrigation, landscaping, grass laying, ground preparation, rolling and mowing." },
       { property: "og:title", content: "Lawn & Landscaping Services — Greenworld Grass" },

@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Use the managed Nitro adapter inside Lovable and the Cloudflare Vite adapter for standalone deployments, with an explicit top-level plugins array; running both adapters together conflicts over the SSR output.
