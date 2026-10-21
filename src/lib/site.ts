@@ -8,6 +8,7 @@ export const media = {
   harvest: `${BASE}/harvest.jpg`,
   truck: `${BASE}/delivery-truck.jpg`,
   mowing: `${BASE}/mowing.jpg`,
+  heroTractor: `${BASE}/hero-tractor.jpg`,
 };
 
 export const contact = {
