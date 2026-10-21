@@ -1,3 +1,3 @@
 - [x] Install the Cloudflare Vite plugin and define an explicit deployment plugins array without duplicating adapters.
 - [x] Check public image storage and unauthenticated image access.
-- [ ] Verify configuration resolution and website rendering.
+- [x] Verify configuration resolution and website rendering; standalone Cloudflare configuration resolves, navigation test passes, and all eight photos return HTTP 200 publicly.
