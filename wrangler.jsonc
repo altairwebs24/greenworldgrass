@@ -1,3 +1,8 @@
+// Cloudflare deploys must run `vite build` first (use `npm run deploy`).
+// The Cloudflare Vite plugin writes dist/server/wrangler.json and a redirect in
+// .wrangler/deploy/config.json, so `wrangler deploy` uploads the built output
+// instead of trying to bundle src/server.ts directly.
+// Do NOT add a "build" field here: Wrangler ignores it for Vite projects.
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "greenworldgrass",
