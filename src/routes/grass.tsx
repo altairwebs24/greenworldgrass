@@ -5,6 +5,8 @@ import { PageHero, WhatsAppCTA } from "@/components/PageHero";
 export const Route = createFileRoute("/grass")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Grass & Garden Soils — Greenworld Grass" },
       { name: "description", content: "Kikuyu, Evergreen, LM Berea and Cynodon grass in stock, plus lawn dressing, potting soil, compost and topsoil." },
       { property: "og:title", content: "Grass & Garden Soils — Greenworld Grass" },

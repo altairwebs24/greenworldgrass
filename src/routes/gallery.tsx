@@ -5,6 +5,8 @@ import { PageHero, WhatsAppCTA } from "@/components/PageHero";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Gallery — Greenworld Grass Farm & Deliveries" },
       { name: "description", content: "Photos from our grass farm, harvesting, mowing and lawn deliveries around Gauteng." },
       { property: "og:title", content: "Gallery — Greenworld Grass" },

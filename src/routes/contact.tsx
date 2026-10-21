@@ -6,6 +6,8 @@ import { PageHero } from "@/components/PageHero";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { title: "Contact Greenworld Grass — Quotes & Orders" },
       { name: "description", content: "WhatsApp or call Sam on 060 320 2515 for quotes, bookings and orders across Gauteng." },
       { property: "og:title", content: "Contact Greenworld Grass" },
