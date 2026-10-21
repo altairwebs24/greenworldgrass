@@ -10,13 +10,13 @@ import { cloudflare } from "@cloudflare/vite-plugin";
 // Lovable's managed build already has a Cloudflare adapter. Only use the
 // Cloudflare Vite adapter for standalone deployments so adapters never overlap.
 const isLovableSandbox =
-  process.env.LOVABLE_SANDBOX === "1" || Boolean(process.env.DEV_SERVER__PROJECT_PATH);
+  process.env["LOVABLE_SANDBOX"] === "1" || Boolean(process.env["DEV_SERVER__PROJECT_PATH"]);
 
 export default defineConfig({
   plugins: [
     ...(isLovableSandbox ? [] : cloudflare({ viteEnvironment: { name: "ssr" } })),
   ],
-  nitro: isLovableSandbox ? undefined : false,
+  nitro: isLovableSandbox,
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
