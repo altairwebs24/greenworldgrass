@@ -10,8 +10,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Fresh instant grass direct from our farm, artificial lawns, soils and landscaping across Gauteng at affordable prices." },
       { property: "og:title", content: "Greenworld Grass — Instant Lawns, Gauteng" },
       { property: "og:description", content: "Fresh farm grass, supply & installation all around Gauteng." },
-      { property: "og:image", content: media.sodRolls },
-      { name: "twitter:image", content: media.sodRolls },
+      { property: "og:image", content: media.heroTractor },
+      { name: "twitter:image", content: media.heroTractor },
     ],
   }),
   component: Index,
@@ -28,7 +28,7 @@ function Index() {
   return (
     <>
       <section className="relative min-h-[85vh] overflow-hidden">
-        <img src={media.sodRolls} alt="Rolls of fresh instant lawn on the farm" className="absolute inset-0 h-full w-full object-cover" />
+        <img src={media.heroTractor} alt="Tractor mowing a lush green lawn field" className="absolute inset-0 h-full w-full object-cover" />
         <div className="bg-hero-overlay absolute inset-0" />
         <div className="relative mx-auto flex min-h-[85vh] max-w-6xl flex-col justify-end px-4 pb-16 text-forest-foreground">
           <p className="font-serif-accent text-xl text-lime">For all your instant lawn installation</p>
